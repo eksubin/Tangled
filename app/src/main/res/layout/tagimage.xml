@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:layout_weight="1"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/imageViewGallery"
+        android:layout_centerInParent="true"
+        />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="#"
+            android:id="@+id/hash"
+            android:layout_weight=".25"
+            android:layout_gravity="center_vertical"
+            android:layout_below="@+id/imageViewGallery"
+            android:paddingLeft="20dp"/>
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/hash"
+            android:id="@+id/tagline"
+            android:layout_alignBaseline="@+id/hash"
+            android:paddingRight="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:text="add"
+        android:id="@+id/add"
+        android:onClick="click"/>
+
+
+        </RelativeLayout>
+
+
