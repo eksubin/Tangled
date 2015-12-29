@@ -19,7 +19,7 @@ public class database extends SQLiteOpenHelper {
         super(context, DATABASE_NAME, null, 5);
 
     }
-
+///// im shruti
     @Override
     public void onCreate(SQLiteDatabase db) {
 
